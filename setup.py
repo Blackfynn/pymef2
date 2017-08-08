@@ -5,5 +5,7 @@ module1 = Extension('pymef2',
 
 setup (name = 'pymef2',
        version = '1.0',
-       description = 'Python Wrapper to MEF C library.',
+       author = "Hoameng Ung",
+       author_email = "hoameng@blackfynn.com",
+       description = 'Minimal Python Wrapper to MEF v2.0 C library.',
        ext_modules = [module1])
