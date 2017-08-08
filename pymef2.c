@@ -12,7 +12,7 @@
 #include "mef.h"
 #include "mef_lib.c"
 
-void initpymeflib(void);
+void initpymef2(void);
 
 
 int main(int argc, char *argv[])
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     Py_Initialize();
 
     /* Add a static module */
-    initpymeflib();
+    initpymef2();
 
     Py_Exit(0);
  }
@@ -286,8 +286,8 @@ static PyMethodDef mef2raw_methods[] = {
 /*
  * Python calls this to let us initialize our module
  */
-void initpymeflib()
+void initpymef2()
 {
-	PyImport_AddModule("pymeflib");
-	Py_InitModule("pymeflib", mef2raw_methods);
+	PyImport_AddModule("pymef2");
+	Py_InitModule("pymef2", mef2raw_methods);
 }
